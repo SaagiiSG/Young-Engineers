@@ -1,6 +1,7 @@
 import React from 'react'
 import Paragraph from '../../components/landing page/paragraph'
 import Logo from "../../assets/logo-yellow transparent.png"
+import Footer from '../../components/Footer/Footer'
 const LandingPage = () => {
     const paragraphContexts =[
         {
@@ -48,6 +49,7 @@ const LandingPage = () => {
     
         }   
         </article>
+        <Footer/>
     </main>
   )
 }
