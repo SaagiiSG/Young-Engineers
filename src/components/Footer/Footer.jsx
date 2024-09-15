@@ -2,7 +2,7 @@ import React from 'react'
 import "../../index.css"
 const Footer = () => {
   return (
-    <footer className='w-[80%] h-auto py-6 gap-12 flex flex-col-reverse items-center justify-center md:flex-row'>
+    <footer className='w-[80%] h-auto py-6 gap-12 flex flex-col-reverse items-start justify-around md:flex-row'>
         <section className='w-[55%] items-start justify-center flex flex-col gap-8'>
                 <h1 className='text-3xl'>Холбогдох</h1>
             <form action="" className='w-full flex flex-col gap-4'>
@@ -25,17 +25,17 @@ const Footer = () => {
                     <button className='w-44 px-6 py-4 bg-slate-500 rounded-xl hover:scale-105 duration-300 hover:bg-slate-400'>Send</button>
             </form>
         </section>
-        <section className='w-[45%] items-start justify-center flex flex-col gap-8'>
-            <h1 className='text-3xl'>FOLLOW</h1>
-            <section className='w-full'>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
-                <a href=""><img src="" alt="" /></a>
+        <section className='w-[30%] h-full items-start justify-start flex flex-col gap-12'>
+            <h1 className='text-3xl'>Дагах</h1>
+            <section className='w-full flex flex-row flex-wrap gap-4'>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
+                <a href="" className='h-auto p-2 rounded-lg grid items-center border-slate-500 border-2'><img className='w-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k3WPRnDaLhYjU8pytS2_FTq6Dol2TI4lrg&s" alt="" /></a>
             </section>
         </section>
     </footer>

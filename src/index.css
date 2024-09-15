@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layers components{
+    .social_link{
+        @apply w-auto h-auto p-2 rounded-lg grid items-center border-slate-500 bg-slate-200;
+    }
+}
