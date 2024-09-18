@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <!--Link for footer favicons-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!---->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+      </head>
+    <body>
+        <!--Navigation bar-->
+        <div class="navbar">
+            <img src="Image/yemlogo.png" alt="logo" style="height:100px">
+            <span class="toggle-btn" onclick="toggleMenu()">&#9776;</span>
+            <ul>
+                <li style="float:left"><a href="#">Young Engineers<br>Mongolia</a></li>
+                <li style="padding-left: 5px;"><a href="#">YEM</a></li>
+                <li><a href="#">Төслүүд</a></li>
+                <li><a href="#">Нийтлэлүүд</a></li>
+                <li><a href="#">Академи</a></li>
+                <li><a href="#">Хандив</a></li>
+            </ul>
+        </div>    
+        <!--respoonsive-->
+        <script>
+          function toggleMenu() {
+              const navbarUl = document.querySelector('.navbar ul');
+              navbarUl.classList.toggle('show');
+          }
+      </script>  
+    </body>
+    <!--Footer-->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>Хандив өгөх</h2>
+          <div class="content">
+            <p>Та бидэнд хандив өгснөөр бидний цааш цаашдын үйл ажиллагаанд маш том дэмжлэг болох болно</p>
+            <div class="social">
+              <a href="https://www.facebook.com/profile.php?id=61555678745364"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.instagram.com/young.engineers_org/"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Холбогдох</h2>
+          <div class="content">
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+976-99999999</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@ngo.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Бидэнтэй холбогдох</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Мессэж*</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Илгээх</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="#">Web development Department of Young Engineers Mongolia</a> | </span>
+          <!--<span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>-->
+        </center>
+      </div>
+    </footer>
+</html>

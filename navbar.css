@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 110px;
+}
+/*navbar*/
+.navbar {
+    background-color: #01093a;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Ensures navbar starts from the top */
+    left: 0; /* Aligns navbar to the left boundary */
+    z-index: 1000; /* Keeps navbar on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Adjusts padding for content within navbar */
+}
+
+.navbar ul {
+    flex: 1;
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    position: relative; 
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: hsl(0, 0%, 100%);
+    display: block;
+    transition: width 0.5s;
+    position: absolute; /* Position the pseudo-element absolutely */
+    bottom: 0; /* Align it at the bottom of the parent */
+    left: 0; /* Start from the left edge of the parent */
+}
+
+.navbar ul li:hover::after {
+    width: 80%;
+}
+
+.active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ff8d23; 
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: none; 
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    color: #ff8d23; /* Optional: change color when active */
+}
+
+
+        /* Toggle button for mobile */
+        .toggle-btn {
+          display: none;
+          font-size: 30px;
+          color: white;
+          cursor: pointer;
+      }
+@media screen and (max-width: 900px) {
+  .navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      background-color: #01093a;
+  }
+
+  .navbar ul.show {
+      display: flex;
+  }
+
+  .navbar ul li {
+      display: block;
+      text-align: center;
+      margin: 0;
+      padding: 15px;
+      border-bottom: 1px solid #fff;
+  }
+
+  .toggle-btn {
+      display: block;
+  }
+}
